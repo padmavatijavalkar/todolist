@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  background-color: cadetblue;
+  color: white;
+  padding: 10px;
+}
+
+ ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.todoApp {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  flex: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.todoAppContainer {
+  height: 80%;
+  width: 100%;
+}
+
+.todoAppHeader {
+  font-size: 2em;
+  text-align: center;
+  padding: 10px;
+}
+
+.formGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+}
+
+.todos li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.todo {
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 8px;
+  user-select: none;
+  box-shadow: 1px 1px 3px 1px grey;
+}
+
+.modalUpdate {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(0);
+  transition: 0.2s;
+}
+
+.showModal {
+  transform: scale(1) !important;
+}
+
+.modalHeader {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.modalScreen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.modalContainer {
+  position: absolute;
+  box-shadow: 1px 1px 3px 1px grey;
+  top: 200px;
+  left: 50%;
+  width: 500px;
+  transform: translateX(-50%);
+  background-color: white;
+}
+
+.modalHeader {
+  padding: 10px;
+  border-bottom: 1px solid black;
+  
+}
+
+.modalBody {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.modalActions {
+  padding: 10px;  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+} 
